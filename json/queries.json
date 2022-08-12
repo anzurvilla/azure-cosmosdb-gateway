@@ -1,0 +1,43 @@
+{
+    "queries": {
+        "test-01": {
+            "id": "test-01",
+            "business": "corp",
+            "to": "test",
+            "enabled": true,
+            "startAt": "2022-01-01 08:00:00",
+            "endAt": "2023-01-01 00:00:00",
+            "overwriteData": true,
+            "wipeData": false,
+            "sqlQuery": "DECLARE @variable1 VARCHAR(50) = 'something else.'; DECLARE @variable2 DATE = '2022-07-29'; SELECT @variable1 AS variable1, @variable2 AS variable2;",
+            "executedAt": "2022-08-11 19:49:16.677",
+            "finishedAt": "2022-08-11 19:49:16.729",
+            "executionTime": "0.052 seconds",
+            "successful": true,
+            "executionResult": "Items uploaded: 1",
+            "updatedAt": "2022-08-11 19:49:16.729"
+        },
+        "1066a679-b614-4487-9314-3998e61f2886": {
+            "business": "corp",
+            "to": "sales",
+            "enabled": true,
+            "startAt": "2022-07-25 08:00:00",
+            "endAt": "2022-09-01 00:00:01",
+            "cronExpression": "20 */8 * * *",
+            "overwriteData": true,
+            "wipeData": false,
+            "notifyTo": "avilla@gemso.com",
+            "sqlQuery": "SELECT 'corp-test1-220701' AS id, 'corp' AS business, 'test1' AS product, CONVERT(DATE, '2022-07-01') AS date, 11000.11 AS amount, 10.1 AS quantity UNION SELECT 'corp-test1-220702', 'corp', 'test1', CONVERT(DATE, '2022-07-02'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test1-220703', 'corp', 'test1', CONVERT(DATE, '2022-07-03'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test1-220704', 'corp', 'test1', CONVERT(DATE, '2022-07-04'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test1-220705', 'corp', 'test1', CONVERT(DATE, '2022-07-05'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test2-220705', 'corp', 'test2', CONVERT(DATE, '2022-07-05'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test1-220706', 'corp', 'test1', CONVERT(DATE, '2022-07-06'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test1-220707', 'corp', 'test1', CONVERT(DATE, '2022-07-07'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test1-220708', 'corp', 'test1', CONVERT(DATE, '2022-07-08'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test1-220709', 'corp', 'test1', CONVERT(DATE, '2022-07-09'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test1-220710', 'corp', 'test1', CONVERT(DATE, '2022-07-10'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test2-220710', 'corp', 'test2', CONVERT(DATE, '2022-07-10'), ROUND(RAND()*1000000,2), ROUND(RAND()*1000,2) UNION SELECT 'corp-test3-220710', 'corp', 'test3', CONVERT(DATE, '2022-07-10'), ROUND(RAND()*10000,2), ROUND(RAND()*10,2);",
+            "createdAt": "2022-07-25 10:00:00.000",
+            "id": "1066a679-b614-4487-9314-3998e61f2886",
+            "_rid": "F0A-APwcag0FAAAAAAAAAA==",
+            "_self": "dbs/F0A-AA==/colls/F0A-APwcag0=/docs/F0A-APwcag0FAAAAAAAAAA==/",
+            "_etag": "\"00000000-0000-0000-a382-36659dc801d8\"",
+            "_attachments": "attachments/",
+            "scheduledAt": "2022-07-29 12:34:25.996",
+            "updatedAt": "2022-07-29 12:34:26.099",
+            "executedAt": "2022-07-29 12:34:26.085",
+            "_ts": 1659123266
+        }
+    }
+}

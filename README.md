@@ -1,2 +1,2 @@
 # azure-cosmosdb-gateway
-Azure Cosmos DB Gateway
+Azure CosmosDB Gateway
